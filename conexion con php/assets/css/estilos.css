@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(135, 188, 201), rgb(83, 223, 181));
+    
+}
+
+main {
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.Titutlo{
+    position: sticky;
+    background-color: chartreuse;
+}
+
+.contenedor_todo {
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    position: relative;
+}
+
+.Caja_de_atras {
+    width: 100%;
+    padding: 5rem 0.3rem;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 128, 255, 0.5);
+    box-shadow: 0.1rem 0.1rem 2rem rgb(0, 0, 0);
+}
+
+.Caja_de_atras div {
+    margin: 1.5rem 2.5rem;
+    color: white;
+    transition: all 0.5s;
+}
+
+.Caja_de_atras div p,
+.Caja_de_atras button {
+    margin-top: 1.8rem;
+}
+
+.Caja_de_atras div h3 {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.Caja_de_atras div p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.Caja_de_atras button {
+    padding: 0.6rem 2.5rem;
+    border: 0.1rem solid #fff;
+    font-size: 0.8rem;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.Caja_de_atras button:hover {
+    background: #ffffffc9;
+    color: #46A2FD;
+}
+
+/* Formulario */
+
+.contenedor_login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 22rem;
+    position: relative;
+    top: -11rem;
+    left: 0.625rem;
+    transition: left 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor_login-register form {
+    width: 100%;
+    padding: 5rem 1.25rem;
+    background: white;
+    position: absolute;
+    border-radius: 1.3rem;
+}
+
+.contenedor_login-register form h2 {
+    font-size: 1.875rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: #46A2FD;
+}
+
+.contenedor_login-register form input {
+    width: 100%;
+    margin-top: 1.25rem;
+    padding: 0.625rem;
+    border: none;
+    background: #F2F2F2;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contenedor_login-register form button {
+    padding: 0.625rem 2.5rem;
+    margin-top: 2.5rem;
+    border: none;
+    font-size: 0.875rem;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+.formulario_login {
+    opacity: 1;
+    display: block;
+}
+
+.formulario_register {
+    display: none;
+}
+
+
+/* NAVEGADOR */
+
+.contenedor{ /*Header*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #000000;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    padding: 0.2rem; 
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    height: 4.6rem;
+    width: 4.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: solid 1px #fefefe;
+}
+
+.logo_nombre{
+    margin-right: 1rem;
+    color: #fefe;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.contenedor_nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor_ul_izquierda{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    
+}
+.contenedor_ul_a{
+    color: #fefefe;
+    padding: 0.5rem;
+}
+
+.contenedor_ul_izquierda :hover{
+    background-color: rgb(189, 204, 200);
+    font-size: 1.2rem;
+}
+
+.contenedor_ul_div{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.contenedor_ul_derecha{
+    margin-right: 1.5rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor_ul_a_derecha{
+    color: #fefefe;
+    padding: 0.5rem;
+}
+
+.contenedor_ul_a_derecha :hover{
+    background-color: rgb(189, 204, 200);
+    font-size: 1.2rem;
+}
+
+.imagen_loguin{
+    border-radius: 100%;
+    border: solid firebrick 2px;
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+
+/*CORREGIR PARA QUE NO SE VEA MAL CUANDO LA PANTALLA SEA CHICA*/
+@media screen and (max-width: 50rem) {
+    main {
+        margin-top: 3rem;
+    }
+
+    .Caja_de_atras {
+        max-width: 20rem;
+        height: 18rem;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .Caja_de_atras div {
+        margin: 0px;
+        position: absolute;
+    }
+
+    /* Formulario */
+
+    .contenedor_login-register {
+        top: -1rem;
+        left: -0.3rem;
+        margin: auto;
+    }
+
+    .contenedor_login-register form {
+        position: relative;
+    }
+}
+
+    /*BARRA LATERAL */
+
+
+.contenedor_general{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: green;
+    margin: 0;
+    padding: 0;
+}
+
+aside{
+    background-color: rgb(20, 4, 4);
+    padding: .5rem;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    color: #fefe;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu_Ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.btn-menu{
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+.btn-menu label{
+    display: flex;
+    justify-content: center;
+    color: #fefefe;
+}
